@@ -6,7 +6,12 @@
 
 <h2>Modules</h2>
 <ul class="zebra-striping">
-    {{#each modules}}
+    {{#each module.pages}}
         <li>{{this.title}}</li>
     {{/each}}
+    {{#withSort module 'data.title'}}
+		{{#each this.pages }}
+			<li>{{ this.data.title }}</li>
+		{{/each}}
+	{{/withSort}}
 </ul>

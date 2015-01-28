@@ -186,8 +186,9 @@ module.exports = function (grunt) {
 						pages: ['<%= yeoman.app %>/assemble/*.hbs', '!<%= yeoman.app %>/assemble/index.hbs']
 					},
 					{
-						name: 'modules',
-						pages: ['<%= yeoman.app %>/assemble/modules/**/*.hbs']
+						name: 'module',
+						sortby: 'title',
+						sortorder: 'descending'
 					}
 				]
 			},
